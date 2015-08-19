@@ -1,0 +1,10 @@
+MapEditor
+
+ * investigate what should be moved to EDT
+ * make 'resize map' code prettier 
+ * make resource loader also load map files
+ 
+ * fix mini map issue where only square ones seem to work
+ * mini map click navigation
+ * mini map needs to keep up with editor changes
+ *
