@@ -4,10 +4,10 @@ A Java lab for playing with GUI functionality.  Primarily concerned with writing
 
 There are two entry points
 
-<b><tt>MapModelTest</tt></b>
+[FirstTestPanel](https://github.com/rossdrew/ui_lab/blob/master/src/main/java/rox/FirstTestPanel.java)
 Run as a standard Java entry point.  This provides a GUI window with a map with current features (e.g. mini map, slippy, zoom, tile select, grid display)
 
-<b><tt>MapEditor</tt></b>
+[MapEditor](https://github.com/rossdrew/ui_lab/blob/master/src/main/java/rox/MapEditor.java)
 The current iteration of map editor, with all current features and map editing, loading and saving functioanlity.
 
 <i>Map files are saved as <tt>*.mgd</tt> files defined by <tt>MapGridFile.java</tt>
