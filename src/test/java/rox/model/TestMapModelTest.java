@@ -14,7 +14,7 @@ public class TestMapModelTest
 	@Before
 	public void setUp() throws Exception 
 	{
-		mapModel = new TestMapModel(22, 33);
+		mapModel = new ModifiableMap(22, 33);
 	}
 
 	@Test

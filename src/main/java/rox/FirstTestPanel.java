@@ -24,7 +24,7 @@ import rox.resource.ResourceLoader;
  */
 public class FirstTestPanel extends JFrame 
 {
-	private ResourceLoader resourceLoader = new ResourceLoader();
+	private final ResourceLoader resourceLoader = new ResourceLoader();
 	private JToolBar toolBar;
 	private JCheckBox showGrid;
 	

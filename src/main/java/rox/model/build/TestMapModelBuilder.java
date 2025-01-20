@@ -2,7 +2,7 @@ package rox.model.build;
 
 import rox.model.MapGrid;
 import rox.model.MapTile;
-import rox.model.TestMapModel;
+import rox.model.ModifiableMap;
 import rox.model.TestTileModel;
 import rox.model.TestTileModel.TileType;
 
@@ -10,7 +10,7 @@ import rox.model.TestTileModel.TileType;
  * @author Ross
  *
  *   Creates a sea level map and allows manipulation then generates an 
- *  output of {@link rox.model.TestMapModel MapModel} for building custom maps.
+ *  output of {@link ModifiableMap MapModel} for building custom maps.
  */
 public class TestMapModelBuilder 
 {
@@ -50,7 +50,7 @@ public class TestMapModelBuilder
 	
 	public MapGrid generateMapModel()
 	{
-		return new TestMapModel(getTileMap());
+		return new ModifiableMap(getTileMap());
 	}
 	
 	/**

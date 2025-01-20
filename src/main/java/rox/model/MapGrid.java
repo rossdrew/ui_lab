@@ -10,7 +10,7 @@ public interface MapGrid
 {
   //TODO map name & add to file
 	public MapTile getTile(int x, int y);
-	public boolean setTile(int x, int y, MapTile tile);
+	public void setTile(int x, int y, MapTile tile) throws IndexOutOfBoundsException;
 	public boolean setTiles(int x1, int y1, int x2, int y2, MapTile tile);
 	public MapTile[][] getTiles();
 	public int getWidth();

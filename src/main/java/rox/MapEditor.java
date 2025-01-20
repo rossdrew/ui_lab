@@ -20,7 +20,6 @@ import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.JToolBar;
 import javax.swing.border.BevelBorder;
@@ -33,7 +32,7 @@ import rox.gui.TileSelectionPanel;
 import rox.gui.event.MapEventListener;
 import rox.model.GridCoordinate;
 import rox.model.MapGrid;
-import rox.model.TestMapModel;
+import rox.model.ModifiableMap;
 import rox.model.build.TestMapModelBuilder;
 import rox.model.file.MapGridFile;
 import rox.resource.ResourceLoader;
@@ -335,7 +334,7 @@ public class MapEditor extends JFrame implements MapEventListener,
 
 			if (specifiedWidth > 0 && specifiedHeight > 0) 
 			{
-				MapGrid mapGrid = new TestMapModel(specifiedHeight, specifiedWidth);
+				MapGrid mapGrid = new ModifiableMap(specifiedHeight, specifiedWidth);
 				regenerateMapPanel(mapGrid);
 			} 
 			else 
